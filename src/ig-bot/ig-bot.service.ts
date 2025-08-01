@@ -442,7 +442,7 @@ export class IgBotService {
     }
   };
 
-  @Cron('*/1 * * * *') // Runs every minute
+  @Cron('*/30 * * * *') // Runs every minute
   async handleScanNewUser() {
     if (this.isRunning) {
       console.log('Previous cron still running, skipping...');
